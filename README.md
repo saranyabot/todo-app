@@ -7,7 +7,9 @@ This is a fullstack Todo application with:
 - **UI Automation**: Cypress (located inside `frontend/`)
 - **API Automation**: Postman (collection provided)-Todo API Tests.json
 
-
+## Prerequisites
+ VS Code
+ node.js
 
 ## Clone the GitHub Repository
 
@@ -30,7 +32,12 @@ todo-app/
 
 
 ## How to Run the App
-Recommended : Open three terminals in Visual studio code using Split Terminals so that visually can see backend, frontend is up and running, cypress test can be run in last terminal.
+Recommended :  Open three split terminals in Visual Studio Code to clearly monitor and manage each part of the application:
+First terminal – Start the backend server
+Second terminal – Launch the frontend React app
+Third terminal – Run the Cypress test runner
+This setup helps ensure all components are running and visible simultaneously.
+
 ### Start Backend - Terminal 1
 cd backend
 npm install
@@ -54,9 +61,6 @@ cd frontend
 npx cypress open
 Then click on todo.cy.js to run tests.
 
-**Run in CLI (headless)**
-npx cypress run
-
  **Run Postman API Tests**
 A Postman Collection "Todo API Tests.json" is provided to automate testing of all Todo API endpoints.
 
@@ -75,8 +79,6 @@ token = (initially blank, will be set after login)
 **How to Run the Collection**
 Open Postman
 Import the collection file and environment (todo-api-collection.json)
-Run the Login request first(Login (POST) — Positive Test) — the token will be automatically saved
-Use the Collection Runner to run all test requests:
 Click on the collection name
 Click three dots on the right hand side of collection and select run (opens Collection Runner)
 Click Start Run
