@@ -12,8 +12,7 @@ This is a fullstack Todo application with:
 ## Clone the GitHub Repository
 
 Open your Visual studio code terminal and run:
-
-git clone https://github.com/saranyabot/test.git
+git clone https://github.com/saranyabot/todo-app.git
 
 ## Project Structure
 
